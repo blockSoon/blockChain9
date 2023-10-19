@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+.div {
+  width: 602px;
+  height: 602px;
+  border: 1px solid;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: rgba(154, 154, 154, 0.416);
+}
+
+.box.on.pop,
+.box.mine.pop {
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box.on.pop {
+  background-image: url(../src/img/good.jpg);
+}
+.box.mine.pop {
+  background-image: url(../src/img/boom.png);
+}

@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.AppWrap {
+  margin: 10px 10px;
+  padding: 10px 20px 10px 10px;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #282c34;
+}
+
+.HeaderWrap {
+}
+
+/* HeaderTop start  */
+.HeaderTop {
+  width: 100%;
+  height: 20px;
+}
+
+.btnBox {
+  width: 100px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.btnBox .redBtn,
+.btnBox .yellowBtn,
+.btnBox .greenBtn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.btnBox .redBtn {
+  background-color: rgb(237, 106, 94);
+}
+.btnBox .yellowBtn {
+  background-color: rgb(245, 191, 79);
+}
+.btnBox .greenBtn {
+  background-color: rgb(98, 197, 84);
+}
+/* HeaderTop end  */
+
+/* HeaderMiddle start  */
+.HeaderMiddle {
+  padding: 10px 0 10px 10px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+}
+.title span {
+  font-size: 20px;
+}
+
+.hamber {
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.hamberSpan {
+  display: block;
+  width: 20px;
+  color: white;
+  border: 1px solid white;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+.hamberSpan::before,
+.hamberSpan::after {
+  content: "";
+  position: absolute;
+  display: block;
+  clear: both;
+  width: 20px;
+  border: 1px solid white;
+  top: 6px;
+  box-sizing: border-box;
+  left: -1px;
+}
+
+.hamberSpan::after {
+  top: 13px;
+}
+/* HeaderMiddle end  */
+
+/* HeaderBottom start  */
+.BottomWrap {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.days {
+  width: 100px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-bottom: 1px solid white;
+}
+.days span {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+/* HeaderBottom end   */
+
+/* ContainerWrap start */
+.ContainerWrap {
+  visibility: hidden;
+  flex-wrap: wrap;
+}
+.ContainerWrap.active {
+  visibility: visible;
+  display: flex;
+}
+.dates {
+  box-sizing: border-box;
+  width: 100px;
+  height: 50px;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.dates span {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px;
+}
+.dates:nth-child(1) span,
+.dates:nth-child(7n) span,
+.dates:nth-child(7n + 1) span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ContainerWrap end */
+.FooterSpan {
+  color: white;
+  font-size: 70px;
+}
+/* Footer start */
